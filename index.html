@@ -1,122 +1,347 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SDA Academy | Learn • Practice • Earn</title>
-<meta name="description" content="SDA Academy helps students learn practical digital skills through live classes, practical learning and student support.">
-<meta property="og:title" content="SDA Academy | Learn • Practice • Earn"><meta property="og:description" content="Live classes, practical learning and student support."><meta property="og:type" content="website"><meta property="og:image" content="assets/images/hero.svg">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head><body>
-<svg width="0" height="0" style="position:absolute"><defs>
-<symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.100-1.500-1.100-2.800s.7-2 .9-2.300c.3-.3.600-.3.800-.3h.6c.2 0 .4 0 .6.500l.8 2c.1.200.1.400 0 .5l-.4.600c-.1.200-.3.300-.1.600.6 1 1.400 1.800 2.400 2.300.3.200.5.100.7-.1l.7-.9c.2-.3.400-.2.600-.1l1.900.9c.3.100.5.200.5.300.100.200.100.800-.100 1.400z"/></symbol>
-<symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M14 8V6c0-.9.2-1.300 1.300-1.300H17V2h-2.600C11.300 2 10 3.700 10 6v2H8v3h2v11h4V11h2.800l.4-3z"/></symbol>
-<symbol id="i-ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></g><circle cx="17.500" cy="6.500" r="1.200" fill="currentColor"/></symbol>
-<symbol id="i-yt" viewBox="0 0 24 24"><path fill="currentColor" d="M22 8.200c-.2-1.200-.9-1.800-2-2C18.300 6 12 6 12 6s-6.300 0-8 .2c-1.100.2-1.800.8-2 2C2 9.500 2 12 2 12s0 2.500.2 3.800c.2 1.200.9 1.800 2 2C5.700 18 12 18 12 18s6.300 0 8-.2c1.100-.2 1.800-.8 2-2 .2-1.300.2-3.800.2-3.800s0-2.500-.2-3.800zM10 15V9l5 3z"/></symbol>
-<symbol id="i-ch" viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h16v12H8l-4 4zm4 4v2h8V8zm0 3v2h5v-2z"/></symbol>
-<symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l3 6.500 7 .8-5.200 4.800 1.400 7L12 17.500 5.800 21l1.400-7L2 9.300l7-.8z"/></symbol>
-<symbol id="i-book" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M4 5a2 2 0 0 1 2-2h14v16H6a2 2 0 0 0-2 2zM4 19V5M9 8h7"/></symbol>
-<symbol id="i-live" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="6" width="13" height="12" rx="3"/><path d="M16 10l5-3v10l-5-3"/></g></symbol>
-<symbol id="i-help" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M9.500 9.500a2.500 2.500 0 1 1 3.500 2.300c-.7.400-1 .900-1 1.700M12 17v.1"/></g></symbol>
-<symbol id="i-path" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><path d="M4 18l5-6 4 3 7-9"/><path d="M15 6h5v5"/></g></symbol>
-<symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="3" d="M5 12.500l4.500 4.500L19 7"/></symbol>
-</defs></svg>
+<meta name="description" content="SDA Academy helps students learn practical digital skills through live Google Meet classes, practical learning and student support.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="SDA Academy | Learn • Practice • Earn">
+<meta property="og:description" content="Live Google Meet classes, practical learning and student support.">
+<meta name="theme-color" content="#071F4D">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A3D91'/%3E%3Ctext x='32' y='42' font-size='26' font-family='Arial' font-weight='700' fill='%23D4AF37' text-anchor='middle'%3ESDA%3C/text%3E%3C/svg%3E">
+<style>
+:root{--blue:#0A3D91;--navy:#071F4D;--light:#F3F8FF;--gold:#D4AF37;--ink:#14264d;--r:22px;--sh:0 10px 30px rgba(7,31,77,.12)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{font-family:"Trebuchet MS","Segoe UI",system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.6;overflow-x:hidden}
+img,svg{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.15;color:var(--navy)}
+h1{font-size:clamp(2rem,6vw,3.6rem)}h2{font-size:clamp(1.6rem,4vw,2.5rem);margin-bottom:.6rem}h3{font-size:1.2rem;margin-bottom:.3rem}
+.wrap{width:min(1180px,100% - 2rem);margin:auto}
+section{padding:clamp(3rem,8vw,6rem) 0}
+.head{text-align:center;max-width:640px;margin:0 auto 2.5rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.85rem 1.5rem;border-radius:99px;font-weight:700;border:2px solid transparent;transition:.25s;cursor:pointer;font-size:1rem;max-width:100%}
+.btn-gold{background:var(--gold);color:var(--navy)}.btn-gold:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(212,175,55,.45)}
+.btn-line{border-color:var(--blue);color:var(--blue);background:#fff}.btn-line:hover{background:var(--blue);color:#fff;transform:translateY(-3px)}
+.btn-wa{background:#25D366;color:#fff}.btn-wa:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(37,211,102,.4)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+/* nav */
+nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:.3s;padding:.8rem 0}
+nav.solid{background:rgba(7,31,77,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 4px 20px rgba(0,0,0,.2);padding:.5rem 0}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.logo{font-family:Georgia,serif;font-weight:700;font-size:1.35rem;color:#fff;display:flex;align-items:center;gap:.5rem}
+.logo b{background:var(--gold);color:var(--navy);border-radius:10px;padding:.1rem .5rem;font-size:1rem}
+.links{display:flex;align-items:center;gap:1.4rem;list-style:none}
+.links a{color:#dbe7ff;font-weight:600;font-size:.95rem;transition:.2s}.links a:hover{color:var(--gold)}
+.burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer;flex-direction:column;justify-content:center;align-items:center;gap:5px}
+.burger i{display:block;width:24px;height:3px;background:#fff;border-radius:3px;transition:.3s}
+.burger.open i:nth-child(1){transform:translateY(8px) rotate(45deg)}.burger.open i:nth-child(2){opacity:0}.burger.open i:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+@media(max-width:900px){.burger{display:flex}
+.links{position:absolute;top:100%;left:0;right:0;flex-direction:column;background:rgba(7,31,77,.97);padding:1rem 1.5rem 1.5rem;gap:1rem;max-height:0;overflow:hidden;opacity:0;visibility:hidden;transition:.35s}
+.links.open{max-height:520px;opacity:1;visibility:visible}}
+/* hero */
+.hero{background:linear-gradient(135deg,var(--navy),var(--blue) 70%);color:#fff;padding-top:7.5rem;position:relative;overflow:hidden}
+.hero h1{color:#fff}
+.hero .grid{display:grid;grid-template-columns:1.05fr 1fr;gap:2.5rem;align-items:center}
+.hero p.lead{color:#cfe0ff;font-size:1.1rem;margin:1.2rem 0 1.6rem;max-width:520px}
+.cta-row{display:flex;flex-wrap:wrap;gap:.8rem}
+.tags{margin-top:1.4rem;color:var(--gold);font-weight:700;font-size:.95rem}
+.blob{position:absolute;border-radius:50%;filter:blur(60px);opacity:.35;pointer-events:none}
+.b1{width:340px;height:340px;background:var(--gold);top:-90px;right:-80px}.b2{width:300px;height:300px;background:#3b82f6;bottom:-100px;left:-90px}
+.art{position:relative}.ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;border-radius:inherit;transition:transform .6s}.ccard .img,.live .art,.about .art{position:relative}.ccard:hover .ph{transform:scale(1.08)}.hero .art .ph{border-radius:24px;box-shadow:0 20px 50px rgba(0,0,0,.35)}.float{z-index:2}
+.float{position:absolute;background:rgba(255,255,255,.16);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.35);border-radius:16px;padding:.6rem 1rem;font-weight:700;font-size:.85rem;color:#fff;animation:fl 5s ease-in-out infinite}
+.f1{top:6%;left:-4%}.f2{top:44%;right:-3%;animation-delay:1.2s}.f3{bottom:6%;left:6%;animation-delay:2.4s}
+@keyframes fl{50%{transform:translateY(-12px)}}
+.bob{animation:fl 7s ease-in-out infinite}
+.load{opacity:0;transform:translateY(24px);animation:in .8s forwards}
+.d1{animation-delay:.1s}.d2{animation-delay:.3s}.d3{animation-delay:.5s}.d4{animation-delay:.7s}
+@keyframes in{to{opacity:1;transform:none}}
+@media(max-width:900px){.hero .grid{grid-template-columns:1fr;text-align:center}.hero p.lead{margin-inline:auto}.cta-row{justify-content:center}.art{max-width:460px;margin:auto}.f1{left:0}.f2{right:0}}
+/* reveal */
+.rv{opacity:0;transition:opacity .8s,transform .8s}.up{transform:translateY(34px)}.lf{transform:translateX(-40px)}.rt{transform:translateX(40px)}.sc{transform:scale(.92)}
+.rv.show{opacity:1;transform:none}
+/* course */
+.course{background:var(--light)}
+.card{background:#fff;border-radius:var(--r);box-shadow:var(--sh);transition:.3s}
+.card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(7,31,77,.2)}
+.ccard{display:grid;grid-template-columns:1fr 1fr;overflow:hidden}
+.ccard .img{overflow:hidden;background:linear-gradient(135deg,#dbe9ff,#fff4d0)}
+.ccard .img svg{width:100%;height:100%;transition:transform .6s}.ccard:hover .img svg{transform:scale(1.08)}
+.ccard .body{padding:clamp(1.4rem,4vw,2.6rem)}
+.feat{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:.7rem;margin:1.2rem 0 1.6rem}
+.feat li{display:flex;gap:.6rem;align-items:center;font-weight:600;font-size:.93rem}
+.ic{flex:none;width:34px;height:34px;border-radius:10px;background:var(--light);color:var(--blue);display:grid;place-items:center;transition:.3s}
+.ic svg{width:18px;height:18px}.feat li:hover .ic,.card:hover>.ic{transform:translateX(4px) rotate(-6deg)}
+@media(max-width:800px){.ccard{grid-template-columns:1fr}.ccard .img{aspect-ratio:16/10}}
+@media(max-width:420px){.feat{grid-template-columns:1fr}}
+/* live */
+.live .grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.live .art{border-radius:var(--r);overflow:hidden;box-shadow:var(--sh)}
+.fg{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.4rem}
+.fg .card{padding:1.1rem}.fg p{font-size:.9rem}
+.note{background:var(--navy);color:#fff;border-radius:14px;padding:.9rem 1.2rem;margin:1rem 0;font-weight:600;border-left:5px solid var(--gold)}
+@media(max-width:900px){.live .grid{grid-template-columns:1fr}}
+@media(max-width:480px){.fg{grid-template-columns:1fr}}
+/* why */
+.why{background:var(--light)}
+.g4{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.3rem}
+.g4 .card{padding:1.6rem;text-align:center}
+.g4 .ic{width:56px;height:56px;margin:0 auto 1rem;border-radius:18px;background:linear-gradient(135deg,var(--blue),var(--navy));color:var(--gold)}.g4 .ic svg{width:28px;height:28px}
+/* reviews */
+.sample{display:inline-block;background:#fff6d6;color:#7a5d00;border:1px solid var(--gold);border-radius:99px;padding:.2rem .9rem;font-size:.82rem;font-weight:700;margin-top:.5rem}
+.car{position:relative}
+.track{display:flex;gap:1.2rem;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:.8rem .3rem 1.4rem;-webkit-overflow-scrolling:touch}
+.track::-webkit-scrollbar{display:none}
+.rev{flex:0 0 calc((100% - 2.4rem)/3);scroll-snap-align:start;padding:1.5rem}
+@media(max-width:900px){.rev{flex-basis:calc((100% - 1.2rem)/2)}}@media(max-width:600px){.rev{flex-basis:100%}}
+.who{display:flex;align-items:center;gap:.8rem;margin-bottom:.7rem}
+.av{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:700;background:linear-gradient(135deg,var(--blue),#3b82f6);border:3px solid var(--gold)}
+.stars{color:var(--gold);letter-spacing:2px}
+.nav-b{display:flex;justify-content:center;gap:.8rem}
+.nav-b button{width:48px;height:48px;border-radius:50%;border:2px solid var(--blue);background:#fff;color:var(--blue);font-size:1.2rem;cursor:pointer;transition:.25s}
+.nav-b button:hover{background:var(--blue);color:#fff}
+/* about */
+.about{background:var(--light)}
+.about .grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.about .art{border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);background:#fff}
+.lpe{display:inline-block;margin-top:1rem;background:var(--navy);color:var(--gold);font-weight:700;padding:.5rem 1.2rem;border-radius:99px}
+@media(max-width:900px){.about .grid{grid-template-columns:1fr}}
+/* cta */
+.cta{background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;text-align:center;position:relative;overflow:hidden}
+.cta h2{color:#fff}.cta p{color:#cfe0ff;margin-bottom:1.6rem}.cta .cta-row{justify-content:center}
+/* contact */
+.socials{display:flex;flex-wrap:wrap;gap:.8rem;justify-content:center;margin-top:1.4rem}
+.soc{display:flex;align-items:center;gap:.5rem;padding:.6rem 1.1rem;border-radius:99px;background:var(--light);font-weight:700;color:var(--blue);transition:.25s}
+.soc:hover{background:var(--blue);color:#fff;transform:translateY(-3px)}.soc svg{width:20px;height:20px;fill:currentColor}
+.contact{text-align:center}.num{font-size:1.6rem;font-weight:700;color:var(--blue);margin:.6rem 0 1rem}
+/* footer */
+footer{background:var(--navy);color:#b9cbef;padding:3rem 0 1.5rem}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2rem}
+footer h3{color:#fff;font-size:1.05rem}footer .logo{margin-bottom:.4rem}
+footer ul{list-style:none}footer li{margin:.3rem 0}footer a:hover{color:var(--gold)}
+footer .socials{justify-content:flex-start;margin-top:.5rem}footer .soc{background:rgba(255,255,255,.1);color:#fff;padding:.5rem}footer .soc:hover{background:var(--gold);color:var(--navy)}
+.copy{border-top:1px solid rgba(255,255,255,.15);margin-top:2rem;padding-top:1.2rem;text-align:center;font-size:.9rem}
+@media(max-width:700px){.fgrid{grid-template-columns:1fr}}
+/* floating wa */
+.wa{position:fixed;right:16px;bottom:16px;z-index:60;width:56px;height:56px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 6px 18px rgba(0,0,0,.3);animation:pulse 2.2s infinite;transition:.25s}
+.wa:hover{transform:scale(1.1)}.wa svg{width:30px;height:30px;fill:#fff}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.6)}70%{box-shadow:0 0 0 16px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv,.load{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.100 1.100 1 2 1.300 2.300 1.400.3.100.5.100.6-.1l.9-1c.2-.3.4-.2.600-.100l2 1c.3.1.5.200.5.300.1.200.1.800-.100 1.400z"/></symbol>
+<symbol id="i-fb" viewBox="0 0 24 24"><path d="M13.5 22v-8.2h2.8l.5-3.300h-3.300V8.400c0-.9.400-1.700 1.800-1.700h1.600V3.800S15.600 3.500 14.300 3.500c-2.700 0-4.400 1.600-4.400 4.500v2.500H7v3.300h2.900V22z"/></symbol>
+<symbol id="i-ig" viewBox="0 0 24 24"><path d="M7.500 2h9A5.500 5.500 0 0 1 22 7.500v9a5.500 5.500 0 0 1-5.500 5.500h-9A5.500 5.500 0 0 1 2 16.500v-9A5.500 5.500 0 0 1 7.500 2zm0 2A3.500 3.500 0 0 0 4 7.500v9A3.500 3.500 0 0 0 7.500 20h9a3.500 3.500 0 0 0 3.500-3.500v-9A3.500 3.500 0 0 0 16.500 4zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.500-3.200a1.200 1.200 0 1 1 0 2.400 1.200 1.200 0 0 1 0-2.400z"/></symbol>
+<symbol id="i-ch" viewBox="0 0 24 24"><path d="M3 10v4a1 1 0 0 0 1 1h2l5 4V5L6 9H4a1 1 0 0 0-1 1zm13.500 2a4.500 4.500 0 0 0-2.500-4v8a4.500 4.500 0 0 0 2.500-4zM14 3.200v2.100a7 7 0 0 1 0 13.400v2.100a9 9 0 0 0 0-17.600z"/></symbol>
+<symbol id="s-ok" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
+</defs>
+</svg>
 
-<div id="loader" aria-hidden="true"><span>SDA <b>Academy</b></span></div>
-
-<header id="nav"><div class="wrap nav-in">
-<a href="#home" class="logo">SDA <b>Academy</b></a>
-<button id="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i><i></i></button>
-<nav id="menu" aria-label="Main">
-<a href="#home">Home</a><a href="#course">Course</a><a href="#reviews">Reviews</a><a href="#about">About</a><a href="#contact">Contact</a>
-<a class="btn btn-gold" href="https://forms.gle/Ldu6oL6N8EwVGrWV9" target="_blank" rel="noopener">Enroll Now</a>
-</nav></div></header>
-
-<main>
-<section id="home" class="hero"><span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
-<div class="wrap hero-in">
-<div class="hero-text">
-<p class="pill">Sobia Digital Academy • Pakistan</p>
-<h1>Learn Digital Skills. Practice with Confidence. Earn Online.</h1>
-<p class="lead">Learn practical digital skills with SDA Academy and turn your skills into real opportunities.</p>
-<div class="btns"><a class="btn btn-gold" href="https://forms.gle/Ldu6oL6N8EwVGrWV9" target="_blank" rel="noopener">Enroll Now</a>
-<a class="btn btn-glass" href="https://wa.me/923044927119" target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg>Contact on WhatsApp</a></div>
-<p class="trust">Live Classes • Practical Learning • Student Support</p>
+<nav id="nav">
+<div class="wrap">
+<a href="#home" class="logo"><b>SDA</b>Academy</a>
+<ul class="links" id="links">
+<li><a href="#home">Home</a></li><li><a href="#course">Course</a></li><li><a href="#live">Live Classes</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li>
+<li><a class="btn btn-gold" href="https://forms.gle/Ldu6oL6N8EwVGrWV9" target="_blank" rel="noopener noreferrer">Enroll Now</a></li>
+</ul>
+<button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i><i></i></button>
 </div>
-<div class="hero-vis">
-<img class="float" src="assets/images/hero.svg" width="600" height="480" alt="Student learning digital skills on a laptop with online classes">
-<div class="chip c1"><svg class="ic"><use href="#i-live"/></svg>Live Learning</div>
-<div class="chip c2"><svg class="ic"><use href="#i-book"/></svg>Practical Skills</div>
-<div class="chip c3"><svg class="ic"><use href="#i-help"/></svg>Student Support</div>
-</div></div></section>
+</nav>
 
-<section id="course" class="sec"><div class="wrap">
-<h2 class="center reveal">Featured Course</h2>
-<article class="course reveal scale">
-<div class="course-img"><img class="float slow" loading="lazy" src="assets/images/canva-ai-course.svg" width="600" height="480" alt="Canva AI course: modern creative design tools on a laptop"></div>
-<div class="course-body">
-<h3>Canva AI Course</h3>
+<header class="hero" id="home">
+<div class="blob b1"></div><div class="blob b2"></div>
+<div class="wrap grid">
+<div>
+<h1 class="load d1">Learn Digital Skills. Practice with Confidence. Earn Online.</h1>
+<p class="lead load d2">Learn practical digital skills with SDA Academy and turn your skills into real opportunities.</p>
+<div class="cta-row load d3">
+<a class="btn btn-gold" href="https://forms.gle/Ldu6oL6N8EwVGrWV9" target="_blank" rel="noopener noreferrer">Enroll Now</a>
+<a class="btn btn-wa" href="https://wa.me/923044927119" target="_blank" rel="noopener noreferrer"><svg width="20" height="20" fill="#fff"><use href="#i-wa"/></svg>Contact on WhatsApp</a>
+</div>
+<p class="tags load d4">Live Classes • Practical Learning • Student Support</p>
+</div>
+<div class="art load d3">
+<img class="ph" src="assets/images/hero-learning.jpg" alt="Student learning digital skills online on a laptop" onerror="this.remove()">
+<svg class="bob" viewBox="0 0 520 440" role="img" aria-label="Student learning online on a laptop with AI and design tools">
+<defs><linearGradient id="hg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F3F8FF"/><stop offset="1" stop-color="#bcd4ff"/></linearGradient></defs>
+<circle cx="260" cy="220" r="200" fill="rgba(255,255,255,.1)"/>
+<rect x="90" y="90" width="340" height="215" rx="18" fill="#071F4D" stroke="#fff" stroke-width="6"/>
+<rect x="105" y="105" width="310" height="185" rx="10" fill="url(#hg)"/>
+<rect x="125" y="125" width="130" height="14" rx="7" fill="#0A3D91"/><rect x="125" y="150" width="90" height="10" rx="5" fill="#0A3D91" opacity=".4"/>
+<rect x="125" y="185" width="80" height="80" rx="12" fill="#D4AF37"/><rect x="215" y="185" width="80" height="80" rx="12" fill="#0A3D91"/>
+<circle cx="360" cy="150" r="30" fill="#0A3D91"/><path d="M360 132l5 13 13 5-13 5-5 13-5-13-13-5 13-5z" fill="#D4AF37"/>
+<rect x="315" y="200" width="85" height="10" rx="5" fill="#0A3D91" opacity=".5"/><rect x="315" y="222" width="60" height="10" rx="5" fill="#0A3D91" opacity=".3"/>
+<path d="M60 305h400l-30 34H90z" fill="#e6eeff"/>
+<circle cx="450" cy="105" r="34" fill="#D4AF37"/><path d="M450 85v40M430 105h40" stroke="#071F4D" stroke-width="6" stroke-linecap="round"/>
+<circle cx="70" cy="200" r="7" fill="#D4AF37"/><circle cx="470" cy="250" r="5" fill="#fff"/><circle cx="55" cy="120" r="4" fill="#fff"/>
+</svg>
+<span class="float f1">Live Learning</span><span class="float f2">Practical Skills</span><span class="float f3">Student Support</span>
+</div>
+</div>
+</header>
+
+<section class="course" id="course">
+<div class="wrap">
+<div class="head rv up"><h2>Our Featured Course</h2><p>One focused course, taught live and built around real practice.</p></div>
+<article class="card ccard rv sc">
+<div class="img">
+<img class="ph" src="assets/images/canva-ai-course.jpg" alt="Canva AI course design workspace" loading="lazy" onerror="this.remove()">
+<svg viewBox="0 0 500 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Canva AI design workspace with graphics, palette and AI sparkle">
+<rect width="500" height="400" fill="#eaf2ff"/><circle cx="420" cy="60" r="90" fill="#D4AF37" opacity=".25"/>
+<rect x="70" y="60" width="280" height="250" rx="20" fill="#fff" stroke="#0A3D91" stroke-width="5"/>
+<rect x="95" y="85" width="230" height="100" rx="12" fill="#0A3D91"/><circle cx="150" cy="135" r="30" fill="#D4AF37"/>
+<path d="M215 170l35-60 35 60z" fill="#F3F8FF"/><rect x="95" y="205" width="140" height="14" rx="7" fill="#071F4D"/><rect x="95" y="230" width="100" height="10" rx="5" fill="#0A3D91" opacity=".4"/>
+<rect x="95" y="260" width="70" height="30" rx="15" fill="#D4AF37"/>
+<circle cx="380" cy="240" r="60" fill="#071F4D"/><path d="M380 195l9 27 27 9-27 9-9 27-9-27-27-9 27-9z" fill="#D4AF37"/>
+<circle cx="405" cy="330" r="16" fill="#0A3D91"/><circle cx="440" cy="330" r="16" fill="#D4AF37"/><circle cx="475" cy="330" r="16" fill="#071F4D"/>
+<path d="M330 120l20 46 8-16 16-8z" fill="#071F4D"/>
+</svg>
+</div>
+<div class="body">
+<h3 style="font-size:1.8rem">Canva AI Course</h3>
 <p>Learn Canva AI and modern creative tools to create professional designs, social media content and visual content faster and easier.</p>
-<ul class="ticks"><li>Canva AI Tools</li><li>AI-Powered Design</li><li>Social Media Designs</li><li>Creative Content</li><li>Practical Projects</li><li>Live Learning</li><li>Student Support</li></ul>
-<a class="btn btn-gold pulse" href="https://forms.gle/Ldu6oL6N8EwVGrWV9" target="_blank" rel="noopener">Enroll Now</a>
-</div></article></div></section>
+<ul class="feat" id="feat"></ul>
+<a class="btn btn-gold" href="https://forms.gle/Ldu6oL6N8EwVGrWV9" target="_blank" rel="noopener noreferrer">Enroll Now</a>
+</div>
+</article>
+</div>
+</section>
 
-<section class="sec alt"><div class="wrap">
-<h2 class="center reveal">Why Learn With SDA Academy?</h2>
-<div class="grid4">
-<div class="card reveal"><svg class="ic big"><use href="#i-book"/></svg><h3>Practical Learning</h3><p>Learn through practical examples and real projects.</p></div>
-<div class="card reveal d1"><svg class="ic big"><use href="#i-live"/></svg><h3>Live Classes</h3><p>Attend live sessions and learn directly from the instructor.</p></div>
-<div class="card reveal d2"><svg class="ic big"><use href="#i-help"/></svg><h3>Student Support</h3><p>Get guidance and support throughout your learning journey.</p></div>
-<div class="card reveal d3"><svg class="ic big"><use href="#i-path"/></svg><h3>Learn • Practice • Earn</h3><p>Focus on practical skills that can be applied in real-world opportunities.</p></div>
-</div></div></section>
+<section class="live" id="live">
+<div class="wrap grid">
+<div class="rv lf">
+<h2>Live Classes</h2>
+<p class="note">Our classes are conducted live through Google Meet.</p>
+<p>Live Learning + Practical Training, with an instructor who answers you in real time.</p>
+<div class="fg">
+<div class="card"><h3>Live Google Meet Classes</h3><p>Interactive classes conducted live through Google Meet.</p></div>
+<div class="card"><h3>Practical Learning</h3><p>Learn through demonstrations and practical tasks.</p></div>
+<div class="card"><h3>Live Q&amp;A</h3><p>Students can ask questions during live sessions.</p></div>
+<div class="card"><h3>Student Support</h3><p>Get guidance throughout the course.</p></div>
+</div>
+</div>
+<div class="art rv rt">
+<img class="ph" src="assets/images/live-classes.jpg" alt="Live Google Meet online class with instructor and students" loading="lazy" onerror="this.remove()">
+<svg viewBox="0 0 500 380" role="img" aria-label="Google Meet style live online class with instructor and student video tiles" loading="lazy">
+<rect width="500" height="380" fill="#071F4D"/>
+<rect x="20" y="20" width="300" height="230" rx="16" fill="#0A3D91"/><circle cx="170" cy="105" r="38" fill="#F3F8FF"/><path d="M95 250c0-50 35-80 75-80s75 30 75 80z" fill="#F3F8FF"/>
+<rect x="340" y="20" width="140" height="106" rx="14" fill="#123c85"/><circle cx="410" cy="60" r="20" fill="#D4AF37"/><path d="M370 126c0-30 18-44 40-44s40 14 40 44z" fill="#D4AF37"/>
+<rect x="340" y="144" width="140" height="106" rx="14" fill="#123c85"/><circle cx="410" cy="184" r="20" fill="#9cc0ff"/><path d="M370 250c0-30 18-44 40-44s40 14 40 44z" fill="#9cc0ff"/>
+<rect x="20" y="268" width="460" height="92" rx="16" fill="#0b2a63"/>
+<circle cx="170" cy="314" r="20" fill="#D4AF37"/><circle cx="230" cy="314" r="20" fill="#fff" opacity=".9"/><circle cx="290" cy="314" r="20" fill="#fff" opacity=".9"/><rect x="330" y="298" width="70" height="32" rx="16" fill="#e0483d"/>
+<rect x="30" y="30" width="70" height="22" rx="11" fill="#e0483d"/><circle cx="46" cy="41" r="5" fill="#fff"/><rect x="56" y="37" width="34" height="8" rx="4" fill="#fff"/>
+</svg>
+</div>
+</div>
+</section>
 
-<section id="reviews" class="sec"><div class="wrap">
-<h2 class="center reveal">What Our Students Say</h2>
-<p class="center note reveal">Sample reviews: replace with real student feedback.</p>
-<div class="slider reveal"><div class="viewport"><div class="track" id="track">
-<figure class="tcard"><div class="stars" aria-label="5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div><blockquote>"Great learning experience. The classes were easy to understand and practical."</blockquote><figcaption>Student Name</figcaption></figure>
-<figure class="tcard"><div class="stars" aria-label="5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div><blockquote>"I learned useful Canva AI skills and enjoyed the practical sessions."</blockquote><figcaption>Student Name</figcaption></figure>
-<figure class="tcard"><div class="stars" aria-label="5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div><blockquote>"The live classes made it easy to ask questions and keep learning."</blockquote><figcaption>Student Name</figcaption></figure>
-<figure class="tcard"><div class="stars" aria-label="5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div><blockquote>"Helpful support and clear projects. I feel more confident designing now."</blockquote><figcaption>Student Name</figcaption></figure>
-</div></div>
-<div class="sl-ctl"><button id="prev" aria-label="Previous review">&#8592;</button><button id="next" aria-label="Next review">&#8594;</button></div></div>
-</div></section>
+<section class="why">
+<div class="wrap">
+<div class="head rv up"><h2>Why Choose SDA Academy</h2></div>
+<div class="g4" id="why"></div>
+</div>
+</section>
 
-<section id="about" class="sec alt"><div class="wrap about">
-<div class="about-img reveal left"><img loading="lazy" src="assets/images/about.svg" width="600" height="480" alt="Online learning session with a laptop and digital tools"></div>
-<div class="reveal right"><h2>About SDA Academy</h2>
+<section id="reviews">
+<div class="wrap">
+<div class="head rv up"><h2>What Our Students Say</h2><span class="sample">Sample Student Reviews — replace with real reviews</span></div>
+<div class="car rv up">
+<div class="track" id="track" tabindex="0" aria-label="Student reviews carousel"></div>
+<div class="nav-b"><button id="prev" aria-label="Previous review">&#10094;</button><button id="next" aria-label="Next review">&#10095;</button></div>
+</div>
+</div>
+</section>
+
+<section class="about" id="about">
+<div class="wrap grid">
+<div class="art rv lf">
+<img class="ph" src="assets/images/about-learning.jpg" alt="Digital education and learning at SDA Academy" loading="lazy" onerror="this.remove()">
+<svg viewBox="0 0 500 380" role="img" aria-label="Digital learning illustration with laptop, books and graduation cap" loading="lazy">
+<rect width="500" height="380" fill="#dbe9ff"/><circle cx="400" cy="80" r="120" fill="#D4AF37" opacity=".25"/>
+<rect x="110" y="120" width="280" height="170" rx="14" fill="#071F4D"/><rect x="122" y="132" width="256" height="146" rx="8" fill="#F3F8FF"/>
+<path d="M250 160l60 22-60 22-60-22z" fill="#0A3D91"/><path d="M212 195v24c0 12 76 12 76 0v-24" fill="none" stroke="#0A3D91" stroke-width="7"/><circle cx="310" cy="182" r="6" fill="#D4AF37"/>
+<path d="M80 290h340l-24 30H104z" fill="#0A3D91"/>
+<rect x="60" y="255" width="80" height="16" rx="4" fill="#D4AF37"/><rect x="70" y="238" width="70" height="17" rx="4" fill="#071F4D"/>
+</svg>
+</div>
+<div class="rv rt">
+<h2>About SDA Academy</h2>
 <p>SDA Academy (Sobia Digital Academy) is an online learning platform focused on practical digital skills. Our goal is to help students learn useful skills, practice them through real projects, and build confidence for future opportunities.</p>
-<p class="gold-line">Learn • Practice • Earn</p></div>
-</div></section>
+<span class="lpe">Learn • Practice • Earn</span>
+</div>
+</div>
+</section>
 
-<section class="cta"><span class="blob b1"></span><span class="blob b3"></span><div class="wrap center reveal scale">
-<h2>Ready to Start Learning?</h2><p class="lead">Join SDA Academy and start building practical digital skills today.</p>
-<div class="btns c"><a class="btn btn-gold" href="https://forms.gle/Ldu6oL6N8EwVGrWV9" target="_blank" rel="noopener">Enroll Now</a>
-<a class="btn btn-glass" href="https://wa.me/923044927119" target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg>WhatsApp Us</a></div></div></section>
+<section class="cta">
+<div class="blob b1"></div><div class="blob b2"></div>
+<div class="wrap rv sc" style="position:relative">
+<h2>Ready to Start Learning?</h2>
+<p>Join SDA Academy and start building practical digital skills today.</p>
+<div class="cta-row">
+<a class="btn btn-gold" href="https://forms.gle/Ldu6oL6N8EwVGrWV9" target="_blank" rel="noopener noreferrer">Enroll Now</a>
+<a class="btn btn-wa" href="https://wa.me/923044927119" target="_blank" rel="noopener noreferrer">WhatsApp Us</a>
+</div>
+</div>
+</section>
 
-<section id="contact" class="sec"><div class="wrap center reveal">
-<h2>Get in Touch</h2><p class="lead dark">WhatsApp: <strong>03044927119</strong></p>
-<a class="btn btn-wa" href="https://wa.me/923044927119" target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg>Chat on WhatsApp</a>
-<div class="social">
-<a href="https://www.facebook.com/share/1BNoFvY4q9/" target="_blank" rel="noopener" aria-label="Facebook"><svg><use href="#i-fb"/></svg></a>
-<a href="https://www.instagram.com/sobiadigitalacademy" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#i-ig"/></svg></a>
-<a href="https://www.youtube.com/@sobiadigitalacademy1" target="_blank" rel="noopener" aria-label="YouTube"><svg><use href="#i-yt"/></svg></a>
-<a href="https://whatsapp.com/channel/0029VbDHmMp11ulY0WvZCA43Q" target="_blank" rel="noopener" aria-label="WhatsApp Channel"><svg><use href="#i-ch"/></svg></a>
-</div></div></section>
-</main>
+<section class="contact" id="contact">
+<div class="wrap rv up">
+<h2>Get in Touch</h2>
+<p>WhatsApp</p>
+<div class="num">03044927119</div>
+<a class="btn btn-wa" href="https://wa.me/923044927119" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+<div class="socials" id="soc1"></div>
+</div>
+</section>
 
-<footer><div class="wrap foot">
-<div><strong class="logo">SDA <b>Academy</b></strong><p>Sobia Digital Academy</p><p class="gold-line">Learn • Practice • Earn</p></div>
-<nav aria-label="Footer"><a href="#home">Home</a><a href="#course">Course</a><a href="#reviews">Reviews</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
-<div class="social sm">
-<a href="https://www.facebook.com/share/1BNoFvY4q9/" target="_blank" rel="noopener" aria-label="Facebook"><svg><use href="#i-fb"/></svg></a>
-<a href="https://www.instagram.com/sobiadigitalacademy" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#i-ig"/></svg></a>
-<a href="https://www.youtube.com/@sobiadigitalacademy1" target="_blank" rel="noopener" aria-label="YouTube"><svg><use href="#i-yt"/></svg></a>
-<a href="https://whatsapp.com/channel/0029VbDHmMp11ulY0WvZCA43Q" target="_blank" rel="noopener" aria-label="WhatsApp Channel"><svg><use href="#i-ch"/></svg></a>
-</div></div><p class="copy">© 2026 SDA Academy. All Rights Reserved.</p></footer>
+<footer>
+<div class="wrap">
+<div class="fgrid">
+<div><a class="logo" href="#home"><b>SDA</b>Academy</a><p>Sobia Digital Academy</p><p style="color:var(--gold);font-weight:700">Learn • Practice • Earn</p></div>
+<div><h3>Quick Links</h3><ul><li><a href="#home">Home</a></li><li><a href="#course">Course</a></li><li><a href="#live">Live Classes</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul></div>
+<div><h3>Follow Us</h3><div class="socials" id="soc2"></div></div>
+</div>
+<p class="copy">© 2026 SDA Academy. All Rights Reserved.</p>
+</div>
+</footer>
 
-<a id="wa-float" href="https://wa.me/923044927119" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg><use href="#i-wa"/></svg></a>
-<button id="top" aria-label="Back to top">&#8593;</button>
-<script src="script.js"></script>
-</body></html>
+<a class="wa" href="https://wa.me/923044927119" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp"><svg><use href="#i-wa"/></svg></a>
+
+<script>
+const $=s=>document.querySelector(s);
+/* socials */
+const S=[["Facebook","https://www.facebook.com/share/1BNoFvY4q9/","i-fb"],["Instagram","https://www.instagram.com/sobiadigitalacademy","i-ig"],["WhatsApp Channel","https://whatsapp.com/channel/0029VbDHmMp11ulY0WvZCA43Q","i-ch"],["WhatsApp","https://wa.me/923044927119","i-wa"]];
+const soc=(list,label)=>list.map(([n,u,i])=>`<a class="soc" href="${u}" target="_blank" rel="noopener noreferrer" aria-label="${n}"><svg><use href="#${i}"/></svg>${label?n:''}</a>`).join("");
+$("#soc1").innerHTML=soc(S.slice(0,3),1);$("#soc2").innerHTML=soc(S,0);
+/* course features */
+$("#feat").innerHTML=["Canva AI Tools","AI-Powered Design","Social Media Designs","Creative Content","Practical Projects","Live Google Meet Classes","Student Support"].map(t=>`<li><span class="ic"><svg><use href="#s-ok"/></svg></span>${t}</li>`).join("");
+/* why cards */
+const ico={0:'<path d="M12 2 2 7l10 5 10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>',1:'<rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/>',2:'<circle cx="9" cy="8" r="4"/><path d="M2 21c0-4 3-6 7-6s7 2 7 6M17 4a4 4 0 0 1 0 8M22 21c0-3-2-5-4-5.500"/>',3:'<path d="M12 2l3 7 7 .8-5.200 4.800L18 22l-6-3.500L6 22l1.200-7.400L2 9.800 9 9z"/>'};
+$("#why").innerHTML=[["Practical Learning","Learn through practical examples and real projects."],["Live Classes","Attend live sessions and learn directly from the instructor."],["Student Support","Get guidance and support throughout your learning journey."],["Learn • Practice • Earn","Focus on practical skills that can be applied in real-world opportunities."]]
+.map((c,i)=>`<div class="card rv up" style="transition-delay:${i*90}ms"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${ico[i]}</svg></div><h3>${c[0]}</h3><p>${c[1]}</p></div>`).join("");
+/* sample reviews (replace with real ones) */
+const N=["Ayesha Khan","Muhammad Hamza","Fatima Noor","Ali Raza","Hira Shah","Usman Ahmad","Sana Malik","Ahmad Hassan","Maryam Khan","Bilal Ahmad","Zainab Noor","Saad Khan","Iqra Ali","Hamza Yousaf","Mahnoor Fatima","Abdul Rehman","Eman Khan","Fahad Ali","Komal Shah","Danish Ahmad","Anum Khan","Muhammad Usman"];
+const T=["The live Google Meet classes make everything easy to follow.","I liked that we practiced each tool instead of only listening.","Canva AI felt confusing before, now I design posts confidently.","Questions were answered during the class, which really helped me.","Good support from the team whenever I got stuck.","The practical tasks made the lessons stick.","Clear explanations, and the pace suited beginners like me.","I can now make social media designs much faster.","Nice mix of demonstrations and hands-on work.","Attending live from home was very convenient.","The instructor was patient and encouraging.","I learned useful AI design shortcuts I didn't know existed.","Simple, organized lessons with real examples.","Friendly environment where everyone could ask questions.","My design skills improved step by step.","Helpful guidance even after the class ended.","The projects gave me something real to show.","Easy to join and easy to follow.","I feel more confident creating content now.","Great for anyone starting with digital design.","Practical approach, no unnecessary theory.","Happy with the live sessions and the support."];
+$("#track").innerHTML=N.map((n,i)=>`<article class="card rev"><div class="who"><div class="av" aria-hidden="true">${n.split(" ").map(w=>w[0]).join("")}</div><div><strong>${n}</strong><div class="stars" aria-label="5 out of 5 stars">★★★★★</div></div></div><p>“${T[i]}”</p></article>`).join("");
+const tr=$("#track"),step=()=>tr.querySelector(".rev").offsetWidth+19;
+const go=d=>{const end=tr.scrollLeft+tr.clientWidth>=tr.scrollWidth-5;if(d>0&&end)tr.scrollTo({left:0,behavior:"smooth"});else if(d<0&&tr.scrollLeft<5)tr.scrollTo({left:tr.scrollWidth,behavior:"smooth"});else tr.scrollBy({left:d*step(),behavior:"smooth"})};
+$("#prev").onclick=()=>go(-1);$("#next").onclick=()=>go(1);
+let auto=setInterval(()=>go(1),4500);
+["mouseenter","touchstart","focusin"].forEach(e=>tr.addEventListener(e,()=>clearInterval(auto),{passive:true}));
+["mouseleave"].forEach(e=>tr.addEventListener(e,()=>{clearInterval(auto);auto=setInterval(()=>go(1),4500)}));
+/* nav */
+const nav=$("#nav"),bg=$("#burger"),lk=$("#links");
+const sc=()=>nav.classList.toggle("solid",scrollY>30);sc();addEventListener("scroll",sc,{passive:true});
+bg.onclick=()=>{const o=lk.classList.toggle("open");bg.classList.toggle("open",o);bg.setAttribute("aria-expanded",o)};
+lk.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{lk.classList.remove("open");bg.classList.remove("open");bg.setAttribute("aria-expanded","false")}));
+/* reveal */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("show");io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
