@@ -166,7 +166,7 @@ footer .socials{justify-content:flex-start;margin-top:.5rem}footer .soc{backgrou
 <p class="tags load d4">Live Classes • Practical Learning • Student Support</p>
 </div>
 <div class="art load d3">
-<img class="ph" src="assets/images/hero-learning.jpg" alt="Student learning digital skills online on a laptop" onerror="this.remove()">
+<img class="ph" src="assets/images/hero-learning.svg" alt="Student learning digital skills online on a laptop">
 <svg class="bob" viewBox="0 0 520 440" role="img" aria-label="Student learning online on a laptop with AI and design tools">
 <defs><linearGradient id="hg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F3F8FF"/><stop offset="1" stop-color="#bcd4ff"/></linearGradient></defs>
 <circle cx="260" cy="220" r="200" fill="rgba(255,255,255,.1)"/>
@@ -190,7 +190,7 @@ footer .socials{justify-content:flex-start;margin-top:.5rem}footer .soc{backgrou
 <div class="head rv up"><h2>Our Featured Course</h2><p>One focused course, taught live and built around real practice.</p></div>
 <article class="card ccard rv sc">
 <div class="img">
-<img class="ph" src="assets/images/canva-ai-course.jpg" alt="Canva AI course design workspace" loading="lazy" onerror="this.remove()">
+<img class="ph" src="assets/images/canva-ai-course.svg" alt="Canva AI course design workspace" loading="lazy">
 <svg viewBox="0 0 500 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Canva AI design workspace with graphics, palette and AI sparkle">
 <rect width="500" height="400" fill="#eaf2ff"/><circle cx="420" cy="60" r="90" fill="#D4AF37" opacity=".25"/>
 <rect x="70" y="60" width="280" height="250" rx="20" fill="#fff" stroke="#0A3D91" stroke-width="5"/>
@@ -226,7 +226,7 @@ footer .socials{justify-content:flex-start;margin-top:.5rem}footer .soc{backgrou
 </div>
 </div>
 <div class="art rv rt">
-<img class="ph" src="assets/images/live-classes.jpg" alt="Live Google Meet online class with instructor and students" loading="lazy" onerror="this.remove()">
+<img class="ph" src="assets/images/live-classes.svg" alt="Live Google Meet online class with instructor and students" loading="lazy">
 <svg viewBox="0 0 500 380" role="img" aria-label="Google Meet style live online class with instructor and student video tiles" loading="lazy">
 <rect width="500" height="380" fill="#071F4D"/>
 <rect x="20" y="20" width="300" height="230" rx="16" fill="#0A3D91"/><circle cx="170" cy="105" r="38" fill="#F3F8FF"/><path d="M95 250c0-50 35-80 75-80s75 30 75 80z" fill="#F3F8FF"/>
@@ -260,7 +260,7 @@ footer .socials{justify-content:flex-start;margin-top:.5rem}footer .soc{backgrou
 <section class="about" id="about">
 <div class="wrap grid">
 <div class="art rv lf">
-<img class="ph" src="assets/images/about-learning.jpg" alt="Digital education and learning at SDA Academy" loading="lazy" onerror="this.remove()">
+<img class="ph" src="assets/images/about-learning.svg" alt="Digital education and learning at SDA Academy" loading="lazy">
 <svg viewBox="0 0 500 380" role="img" aria-label="Digital learning illustration with laptop, books and graduation cap" loading="lazy">
 <rect width="500" height="380" fill="#dbe9ff"/><circle cx="400" cy="80" r="120" fill="#D4AF37" opacity=".25"/>
 <rect x="110" y="120" width="280" height="170" rx="14" fill="#071F4D"/><rect x="122" y="132" width="256" height="146" rx="8" fill="#F3F8FF"/>
@@ -325,9 +325,10 @@ const ico={0:'<path d="M12 2 2 7l10 5 10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>',1:
 $("#why").innerHTML=[["Practical Learning","Learn through practical examples and real projects."],["Live Classes","Attend live sessions and learn directly from the instructor."],["Student Support","Get guidance and support throughout your learning journey."],["Learn • Practice • Earn","Focus on practical skills that can be applied in real-world opportunities."]]
 .map((c,i)=>`<div class="card rv up" style="transition-delay:${i*90}ms"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${ico[i]}</svg></div><h3>${c[0]}</h3><p>${c[1]}</p></div>`).join("");
 /* sample reviews (replace with real ones) */
+const AVATAR="assets/images/student-avatar.svg";
 const N=["Ayesha Khan","Muhammad Hamza","Fatima Noor","Ali Raza","Hira Shah","Usman Ahmad","Sana Malik","Ahmad Hassan","Maryam Khan","Bilal Ahmad","Zainab Noor","Saad Khan","Iqra Ali","Hamza Yousaf","Mahnoor Fatima","Abdul Rehman","Eman Khan","Fahad Ali","Komal Shah","Danish Ahmad","Anum Khan","Muhammad Usman"];
 const T=["The live Google Meet classes make everything easy to follow.","I liked that we practiced each tool instead of only listening.","Canva AI felt confusing before, now I design posts confidently.","Questions were answered during the class, which really helped me.","Good support from the team whenever I got stuck.","The practical tasks made the lessons stick.","Clear explanations, and the pace suited beginners like me.","I can now make social media designs much faster.","Nice mix of demonstrations and hands-on work.","Attending live from home was very convenient.","The instructor was patient and encouraging.","I learned useful AI design shortcuts I didn't know existed.","Simple, organized lessons with real examples.","Friendly environment where everyone could ask questions.","My design skills improved step by step.","Helpful guidance even after the class ended.","The projects gave me something real to show.","Easy to join and easy to follow.","I feel more confident creating content now.","Great for anyone starting with digital design.","Practical approach, no unnecessary theory.","Happy with the live sessions and the support."];
-$("#track").innerHTML=N.map((n,i)=>`<article class="card rev"><div class="who"><div class="av" aria-hidden="true">${n.split(" ").map(w=>w[0]).join("")}</div><div><strong>${n}</strong><div class="stars" aria-label="5 out of 5 stars">★★★★★</div></div></div><p>“${T[i]}”</p></article>`).join("");
+$("#track").innerHTML=N.map((n,i)=>`<article class="card rev"><div class="who"><img class="av" src="${AVATAR}" alt="Student avatar" loading="lazy"><div><strong>${n}</strong><div class="stars" aria-label="5 out of 5 stars">★★★★★</div></div></div><p>“${T[i]}”</p></article>`).join("");
 const tr=$("#track"),step=()=>tr.querySelector(".rev").offsetWidth+19;
 const go=d=>{const end=tr.scrollLeft+tr.clientWidth>=tr.scrollWidth-5;if(d>0&&end)tr.scrollTo({left:0,behavior:"smooth"});else if(d<0&&tr.scrollLeft<5)tr.scrollTo({left:tr.scrollWidth,behavior:"smooth"});else tr.scrollBy({left:d*step(),behavior:"smooth"})};
 $("#prev").onclick=()=>go(-1);$("#next").onclick=()=>go(1);
