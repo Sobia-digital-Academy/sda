@@ -92,3 +92,16 @@ document.addEventListener("DOMContentLoaded",()=>{
     e.preventDefault(); target.scrollIntoView({behavior:reduce?"auto":"smooth",block:"start"});
   }));
 });
+// Graceful local-image fallback: replace failed images with a lightweight branded visual.
+document.querySelectorAll("img").forEach(img=>{
+  img.addEventListener("error",()=>{
+    if(img.dataset.fallbackApplied)return;
+    img.dataset.fallbackApplied="true";
+    const fallback=document.createElement("div");
+    fallback.className="image-fallback";
+    fallback.innerHTML='<span>SDA</span><small>Digital Learning</small>';
+    fallback.setAttribute("role","img");
+    fallback.setAttribute("aria-label",img.alt||"SDA Academy digital learning visual");
+    img.replaceWith(fallback);
+  },{once:true});
+});
