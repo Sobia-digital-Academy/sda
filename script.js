@@ -28,6 +28,18 @@ document.addEventListener("DOMContentLoaded",()=>{
     items.forEach(el=>io.observe(el));
   }else items.forEach(el=>el.classList.add("is-visible"));
 
+  const reviewTrack=$(".review-track");
+  if(reviewTrack){
+    const reviewCards=[...reviewTrack.children];
+    reviewCards.forEach(card=>{const clone=card.cloneNode(true);clone.classList.remove("reveal","reveal-delay-1","reveal-delay-2");clone.setAttribute("aria-hidden","true");reviewTrack.appendChild(clone)});
+    const pauseReviews=()=>reviewTrack.closest(".review-marquee")?.classList.add("is-paused");
+    const resumeReviews=()=>reviewTrack.closest(".review-marquee")?.classList.remove("is-paused");
+    reviewTrack.addEventListener("mouseenter",pauseReviews);
+    reviewTrack.addEventListener("mouseleave",resumeReviews);
+    reviewTrack.addEventListener("touchstart",pauseReviews,{passive:true});
+    reviewTrack.addEventListener("touchend",()=>setTimeout(resumeReviews,900),{passive:true});
+  }
+
   const names=["Ayesha Khan","Muhammad Hamza","Fatima Noor","Ali Raza","Hira Shah","Usman Ahmad","Sana Malik","Ahmad Hassan","Maryam Khan","Bilal Ahmad","Zainab Noor","Saad Khan","Iqra Ali","Hamza Yousaf","Mahnoor Fatima","Abdul Rehman","Eman Khan","Fahad Ali","Komal Shah","Danish Ahmad","Anum Khan","Muhammad Usman"];
   const reviews=[
     "The practical activities made Canva AI easier to understand. I liked being able to follow along during the live class.",
