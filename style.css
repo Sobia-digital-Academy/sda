@@ -26,3 +26,7 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.float-card,.floating-wa,.loader-mark i{animation:none}.btn,.why-card,.contact-card{transition:none}.review-track{transition:none}}
 
 .image-fallback{min-height:260px;width:100%;display:grid;place-content:center;text-align:center;background:radial-gradient(circle at 50% 35%,rgba(64,132,240,.25),transparent 38%),linear-gradient(135deg,#071F4D,#0A3D91);color:#fff;border-radius:inherit}.image-fallback span{font-size:2.5rem;font-weight:800;letter-spacing:-.06em}.image-fallback small{display:block;color:#cfe0ff;margin-top:5px;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+
+.review-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.review-grid .review-card{flex:none;width:auto}.review-avatar{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--blue);color:#fff;font-weight:800;border:2px solid var(--gold)}
+@media(max-width:900px){.review-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.review-grid{grid-template-columns:1fr}}
